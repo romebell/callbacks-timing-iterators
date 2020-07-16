@@ -85,3 +85,28 @@ function superSpin() {
 }
 
 console.log(sonic(superSpeed, superSpin));
+
+
+function blastOff() {
+    let num = 0;
+
+    for (let i = 10; i >= num; i--) {
+        console.log(i); // 10, 9, 8, 7, ....
+    }
+    console.log('BLAST OFF!!!!!');
+}
+
+setTimeout(blastOff, 5000);
+
+// make a function that prints your name (printName)
+// setTimeout and pass in function and a time (5000)
+
+function printName(name) {
+    console.log(name);
+}
+
+// setTimeout
+let myNameTwo = 'Rome';
+setTimeout(function(){
+    printName(myNameTwo);
+}, 5000);
