@@ -96,7 +96,7 @@ function blastOff() {
     console.log('BLAST OFF!!!!!');
 }
 
-setTimeout(blastOff, 5000);
+// setTimeout(blastOff, 5000);
 
 // make a function that prints your name (printName)
 // setTimeout and pass in function and a time (5000)
@@ -107,6 +107,43 @@ function printName(name) {
 
 // setTimeout
 let myNameTwo = 'Rome';
-setTimeout(function(){
-    printName(myNameTwo);
-}, 5000);
+// setTimeout(function(){
+//     printName(myNameTwo);
+// }, 5000);
+
+// Iterators
+// forEach
+
+const collectables = ['Bomag', 'CMI Corp', 'Wirtgen', 'Catepillar'];
+
+// collectables.forEach(function(element) {
+//     console.log(element);
+// });
+
+collectables.forEach(element => {
+   if (element.length > 6) {
+       console.log(element);
+   }
+});
+
+// map
+const someNumbers = [24, 65, 347, 34];
+
+const addFive = someNumbers.map(element => {
+    return element + 5;
+});
+
+console.log(addFive);
+
+// [29, 70, 352, 39]
+
+// filter
+const filteredNumbers = someNumbers.filter(element => {
+    if (element > 50) {
+        return element;
+    }
+});
+console.log(filteredNumbers);
+
+// [65, 347]
+
