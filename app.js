@@ -61,3 +61,27 @@ function subtractNumbers(num1, num2) {
 }
 
 console.log(calculator(5,77, addNumbers, subtractNumbers));
+
+// make a superHero function
+// take in two callbacks
+// return a string in each callback describing the superpower
+
+function sonic(superPowerOne, superPowerTwo) {
+    let allSuperPowers = superPowerOne() + ' and ' + superPowerTwo();
+
+    return allSuperPowers;
+}
+
+function superSpeed() {
+    let power = 'I can run 1000 mph';
+
+    return power;
+}
+
+function superSpin() {
+    let spin = 'I can spin 1000 mph';
+
+    return spin;
+}
+
+console.log(sonic(superSpeed, superSpin));
